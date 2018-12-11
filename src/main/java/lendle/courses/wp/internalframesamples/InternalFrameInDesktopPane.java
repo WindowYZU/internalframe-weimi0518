@@ -33,7 +33,15 @@ public class InternalFrameInDesktopPane {
         //create a desktoppane
         //add internalFrame to it
         //make it visible
-        
+        JDesktopPane jDesktopPane = new JDesktopPane();
+        frame.setContentPane(jDesktopPane);
+        JInternalFrame jInternalFrame = new JInternalFrame();
+        frame.add(jInternalFrame);
+        jInternalFrame.setSize(300,300);
+        jInternalFrame.setVisible(true);
+        jInternalFrame.setMaximizable(true);
+        jInternalFrame.setIconifiable(true);
+        jInternalFrame.setResizable(true);
         /////////////////////////////////
         frame.setVisible(true);
     }
