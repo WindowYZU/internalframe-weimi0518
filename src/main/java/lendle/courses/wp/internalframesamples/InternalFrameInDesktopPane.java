@@ -41,10 +41,10 @@ public class InternalFrameInDesktopPane {
             frame.add(jInternalFrame);
             jInternalFrame.setSize(300,300);
             jInternalFrame.setVisible(true);
-            jInternalFrame.setMaximizable(true);
-            jInternalFrame.setIconifiable(true);
-            jInternalFrame.setResizable(true);
-            jInternalFrame.setClosable(true);
+            jInternalFrame.setMaximizable(true); //放大縮小
+            jInternalFrame.setIconifiable(true); //縮至小圖
+            jInternalFrame.setResizable(true); //可改變視窗大小
+            jInternalFrame.setClosable(true); //可關閉視窗
         }
         /////////////////////////////////
         frame.setVisible(true);

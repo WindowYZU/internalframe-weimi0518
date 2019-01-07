@@ -35,14 +35,20 @@ public class LayerSample {
         frame.setContentPane(desktopPane);
         //experiment with JDesktopPane.xxxLAYER
         JButton button1=new JButton("button1");
-        button1.setBounds(0, 0, 100, 50);
+        button1.setBounds(0, 0, 100, 50); // (x, y, width, height)
         desktopPane.add(button1, JDesktopPane.DRAG_LAYER);
         
         JButton button2=new JButton("button2");
         button2.setBounds(50, 0, 100, 50);
         desktopPane.add(button2, JDesktopPane.DEFAULT_LAYER);
+        //JDesktopPane.深度
+        //DEFAULT_LAYER -> 0
+        //PALETTE_LAYER -> 100
+        //MODAL_LAYER -> 200
+        //POPUP_LAYER -> 300
+        //DRAG_LAYER -> 400
         ///////////////////////////////////////////////////////
-        ImageIcon icon = new ImageIcon(new URL("https://image.freepik.com/free-vector/blue-and-green-wavy-background_1035-7430.jpg"));
+        ImageIcon icon = new ImageIcon(new URL("https://www.dhresource.com/0x0s/f2-albu-g5-M00-0F-27-rBVaJFiid_KAWQTEAACJzY-3dS4814.jpg/hot-sale-for-peanuts-snoopy-love-vinyl-funny.jpg"));
         JLabel label = new JLabel(icon);
         label.setBounds(0, 0, icon.getIconWidth(), icon.getIconHeight());
         desktopPane.add(label, Integer.MIN_VALUE);
